@@ -2,15 +2,6 @@ window.addEventListener('load', function () {
     new FastClick(document.body);
 }, false);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-    //console.log("We got device ready");
-    cordova.exec(null, null, "SplashScreen", "hide", []);
-    // Soon to be
-    // navigator.splashscreen.hide();
-}
-
 // The dynamically built HTML pages. In a real-life app, In a real-life app, use Handlerbar.js, Mustache.js or another template engine
 var homePage =
     '<div>' +
