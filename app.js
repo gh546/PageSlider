@@ -16,6 +16,7 @@ var homePage =
     '<div>' +
         '<div class="header"><h1>Home</h1></div>' +
         '<div class="scroller">' +
+			'<img src="images/{{img}}"/>'+
             '<ul class="list">' +
                 '<li><a href="#page1"><strong>Cafe 1</strong></a></li>' +
                 '<li><a href="#page2"><strong>Cafe 2</strong></a></li>' +
@@ -56,7 +57,7 @@ function route(event) {
 //        slider.slide($(page), "right");
     }
     else {
-        page = homePage;
+        page = merge(homePage, {img: "Map.png"});
 //        slider.slide($(homePage), "left");
     }
 
